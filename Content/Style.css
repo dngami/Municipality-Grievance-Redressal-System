@@ -1,0 +1,393 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../Content/fonts/source-sans-pro-v11-latin-300.eot');
+    src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url('../Content/fonts/source-sans-pro-v11-latin-300.eot?#iefix') format('embedded-opentype'), url('../Content/fonts/source-sans-pro-v11-latin-300.woff2') format('woff2'), url('../Content/fonts/source-sans-pro-v11-latin-300.woff') format('woff'), url('../Content/fonts/source-sans-pro-v11-latin-300.ttf') format('truetype'), url('../Content/fonts/source-sans-pro-v11-latin-300.svg#SourceSans Pro') format('svg');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../Content/fonts/source-sans-pro-v11-latin-300italic.eot');
+    src: local('Source Sans Pro Light Italic'), local('SourceSansPro-LightItalic'), url('../Content/fonts/source-sans-pro-v11-latin-300italic.eot?#iefix') format('embedded-opentype'), url('../Content/fonts/source-sans-pro-v11-latin-300italic.woff2') format('woff2'), url('../Content/fonts/source-sans-pro-v11-latin-300italic.woff') format('woff'), url('../Content/fonts/source-sans-pro-v11-latin-300italic.ttf') format('truetype'), url('../Content/fonts/source-sans-pro-v11-latin-300italic.svg#SourceSans Pro') format('svg');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../Content/fonts/source-sans-pro-v11-latin-italic.eot');
+    src: local('Source Sans Pro Italic'), local('SourceSansPro-Italic'), url('../Content/fonts/source-sans-pro-v11-latin-italic.eot?#iefix') format('embedded-opentype'), url('../Content/fonts/source-sans-pro-v11-latin-italic.woff2') format('woff2'), url('../Content/fonts/source-sans-pro-v11-latin-italic.woff') format('woff'), url('../Content/fonts/source-sans-pro-v11-latin-italic.ttf') format('truetype'), url('../Content/fonts/source-sans-pro-v11-latin-italic.svg#SourceSans Pro') format('svg');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../Content/fonts/source-sans-pro-v11-latin-regular.eot');
+    src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url('../Content/fonts/source-sans-pro-v11-latin-regular.eot?#iefix') format('embedded-opentype'), url('../Content/fonts/source-sans-pro-v11-latin-regular.woff2') format('woff2'), url('../Content/fonts/source-sans-pro-v11-latin-regular.woff') format('woff'), url('../Content/fonts/source-sans-pro-v11-latin-regular.ttf') format('truetype'), url('../Content/fonts/source-sans-pro-v11-latin-regular.svg#SourceSans Pro') format('svg');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../Content/fonts/source-sans-pro-v11-latin-600.eot');
+    src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url('../Content/fonts/source-sans-pro-v11-latin-600.eot?#iefix') format('embedded-opentype'), url('../Content/fonts/source-sans-pro-v11-latin-600.woff2') format('woff2'), url('../Content/fonts/source-sans-pro-v11-latin-600.woff') format('woff'), url('../Content/fonts/source-sans-pro-v11-latin-600.ttf') format('truetype'), url('../Content/fonts/source-sans-pro-v11-latin-600.svg#SourceSans Pro') format('svg');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: italic;
+    font-weight: 600;
+    src: url('../Content/fonts/source-sans-pro-v11-latin-600italic.eot');
+    src: local('Source Sans Pro SemiBold Italic'), local('SourceSansPro-SemiBoldItalic'), url('../Content/fonts/source-sans-pro-v11-latin-600italic.eot?#iefix') format('embedded-opentype'), url('../Content/fonts/source-sans-pro-v11-latin-600italic.woff2') format('woff2'), url('../Content/fonts/source-sans-pro-v11-latin-600italic.woff') format('woff'), url('../Content/fonts/source-sans-pro-v11-latin-600italic.ttf') format('truetype'), url('../Content/fonts/source-sans-pro-v11-latin-600italic.svg#SourceSans Pro') format('svg');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../Content/fonts/source-sans-pro-v11-latin-700.eot');
+    src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url('../Content/fonts/source-sans-pro-v11-latin-700.eot?#iefix') format('embedded-opentype'), url('../Content/fonts/source-sans-pro-v11-latin-700.woff2') format('woff2'), url('../Content/fonts/source-sans-pro-v11-latin-700.woff') format('woff'), url('../Content/fonts/source-sans-pro-v11-latin-700.ttf') format('truetype'), url('../Content/fonts/source-sans-pro-v11-latin-700.svg#SourceSans Pro') format('svg');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../Content/fonts/source-sans-pro-v11-latin-700italic.eot');
+    src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldItalic'), url('../Content/fonts/source-sans-pro-v11-latin-700italic.eot?#iefix') format('embedded-opentype'), url('../Content/fonts/source-sans-pro-v11-latin-700italic.woff2') format('woff2'), url('../Content/fonts/source-sans-pro-v11-latin-700italic.woff') format('woff'), url('../Content/fonts/source-sans-pro-v11-latin-700italic.ttf') format('truetype'), url('../Content/fonts/source-sans-pro-v11-latin-700italic.svg#SourceSans Pro') format('svg');
+}
+
+.required:after {
+    content: " * ";
+    font-weight: bolder;
+    color: red;
+}
+
+.eitherOrRequired:after {
+    content: " # ";
+    font-weight: bolder;
+    color: red;
+}
+.eitherOrRequiredBefore:before {
+    content: " # ";
+    font-weight: bolder;
+    color: red;
+}
+
+fieldset {
+    border: 1px groove #ddd;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow: 0px 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px 0px #000;
+}
+
+    fieldset.border-top {
+        border: none;
+        border-top: 1px groove #ff0000;
+    }
+
+legend {
+    font-size: 1.0em !important;
+    font-weight: bold !important;
+    text-align: left;
+    width: auto;
+    padding: 0 10px;
+    border-bottom: none;
+    margin-bottom: 0px !important;
+}
+
+.text-danger {
+    color: red;
+}
+
+.text-info {
+    color: #0000FF;
+}
+
+.show-grid {
+    margin: 0px;
+}
+
+    .show-grid [class^=col-] {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /*
+    background-color: #eee;
+    background-color: rgba(86,61,124,.15);
+    */
+        border-top: 1px solid #ddd;
+        border-top: 1px solid rgba(86,61,124,.2);
+    }
+
+.bg-megenta {
+    background-color: #c61fb9;
+}
+
+.bg-kiwi {
+    background-color: #733e8b !important;
+}
+
+.bg-darkSeaGreen {
+    background-color: #8FBC8F !important;
+}
+
+.bg-darkSlatiGray {
+    background-color: #2F4F4F !important;
+}
+
+.info-box-text {
+    text-transform: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.info-box-number {
+    font-size: 25px;
+}
+
+.dropdown-menu {
+    width: 220px !important;
+}
+
+
+
+.navbar-nav > .user-menu > .dropdown-menu > .user-body a {
+    color: #FFFFFF !important;
+}
+
+.select2-selection--single {
+    height: auto !important;
+    border-color: #d2d6de !important;
+}
+
+.common-wrapper {
+    border-bottom: 1px solid #eeeeee;
+    background: #fbfbfb;
+    z-index: 10;
+}
+
+.common-container {
+    height: 36px;
+}
+
+.common-left {
+    float: left;
+    position: relative;
+}
+
+.common-left ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+    .common-left ul li {
+        float: left;
+        line-height: 132%;
+        font-size: 65%;
+        font-weight: 600;
+        text-transform: uppercase;
+        height: 36px;
+        padding-top: 6px;
+        padding-right: 8px;
+    }
+
+.clearfix {
+}
+
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.common-left ul li.gov-india {
+    text-align: right;
+}
+
+.common-left ul li.ministry {
+    padding-left: 8px;
+    border-left: 1px solid #eeeeee;
+}
+
+.common-left ul li span {
+    display: block;
+    font-size: 120%;
+}
+
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.common-left ul li span.li_eng {
+    font-size: 120%;
+}
+
+/*ul {
+    list-style: none;
+    display: inline-flex;
+}*/
+
+.text-black {
+    color: black;
+}
+
+.header-wrapper {
+    border-bottom: 1px solid #fff !important;
+}
+
+.header-container {
+    padding: 8px 0px 6px;
+}
+
+.float-element {
+    float: left;
+    margin-left: 12px;
+}
+
+.header-right.clearfix {
+    font-size: 90% !important;
+}
+
+.header-right {
+    float: right;
+}
+
+.logo {
+    min-width: 345px;
+    background: none;
+    padding: 0;
+    float: left;
+    font-size: 160%;
+    line-height: 90%;
+    min-height: 103px;
+    margin-top: 0px !important;
+    text-transform: uppercase;
+    width:85%;
+}
+.logo img {
+    float: left;
+    padding: 0 15px 0 5px;
+}
+.logo a {
+    display: block;
+    text-align: left;
+    color: #000;
+}
+.header__logo {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.logo a strong {
+    padding-top: 0px !important;
+    font-weight: 600;
+display: block;
+font-size: 80%;
+}
+.logo a span {
+    display: block;
+    font-weight: 900;
+    font-size: 110%;
+}
+.ad4 {
+    display: inline-block !important;
+}
+
+/*.info-box {
+    display: block;
+    min-height: 90px;
+   background: #fff;
+    width: 90%;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    border-radius: 2px;
+    margin-bottom: 5px;
+    z-index:100;
+}*/
+address {
+    font-style: italic;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav > .user-menu > .dropdown-menu > .user-body a {
+        background: #fff;
+        background: transparent !important;
+
+    }
+    /*.main-header .navbar-custom-menu a, .main-header .navbar-right a {
+    color: inherit;
+    background: transparent !important;
+}*/
+}
+/* Marquee */
+@keyframes push {
+    from {
+        margin: 0;
+    }
+    to {
+        margin: 100px;
+    }
+}
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+}
+    .marquee > span {
+        animation: 1s linear 0s infinite push;
+        animation-direction: alternate;
+        /*
+    animation: duration timing-function delay repeat-count animation-name;
+    */
+    }
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+a {
+    cursor: pointer;
+}
+
+.roundedcorner {
+    border-radius: 10px;
+    
+}
+.button {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.035em;
+    padding: 18px 45px;
+    border-radius: 40px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.button--primary {
+    background-color: #01E675;
+    color: #fff !important;
+}
+.button-social > :first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 42px;
+    line-height: 50px;
+    font-size: 1.6em;
+    text-align: center;
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
